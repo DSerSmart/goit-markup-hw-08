@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  justify-content: center;
 }
 .clients {
   @include tablet {
@@ -11,8 +12,8 @@
 }
 
 .a-soc-link {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -33,31 +34,34 @@
 /* .team-soc-icon{
   fill: var(--team-soc-icon);
 } */
-.clients-soc-item {
-  @media screen and (max-width: 479px) {
-    width: calc(100% / 1 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
-  }
 
-  @media screen and (min-width: 480px) {
+// .clients-soc-item:nth-child(n+3) {
+//    @media screen and (min-width: 480px) {
+//   margin-top: 30px;
+// }} 
+
+.clients-soc-item { margin-left: 30px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: calc(100% / 2 - 30px);
-    margin-top: 30px;
     margin-left: 30px;
-  }
-  @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
-  }
+    &:nth-child(n+3){
+      margin-top: 30px;
+  }}
+  
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 6 - 30px);
-    margin-top: 30px;
     margin-left: 30px;
   }
 }
+.clients-soc-item {
+@media screen and (min-width: 768px) {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}}
+.clients-soc-item:nth-child(n+4) {
+  @media screen and (min-width: 768px) and (max-width: 1199px)  {
+      margin-top: 30px;
+  }}
 
-/* отступ всем кроме первого  */
-// .clients-soc-item + .clients-soc-item {
-//   margin-left: 30px;
-// }
