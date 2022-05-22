@@ -1,0 +1,52 @@
+/* .bg {
+   width: 800;
+   height: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 10px dashed rgba(0, 0, 0, 0.5);
+   color: green;
+   background-repeat: no-repeat;
+   background-image: url(../img/box1.jpg) ;
+   background-position: center;
+   /* расширяет изображение пока не упрётса одной из сторон */
+/* background-size: contain; */
+/* по умолчанию, оригенальный размер*/
+/* background-size:auto ;  */
+/* увеличивае изображение пока полностью не заполнит полностью окно */
+/* background-size: cover ; */
+/* } */
+/* -------Градиент-------- */
+.cont {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.linear,
+.radial {
+    height: 200px;
+}
+
+/* .linear{
+   background-image:  linear-gradient(
+    to left,
+    blue 0 30%,
+    yellow 70% 100%);
+  } */
+
+/* .radial{
+  background-image: radial-gradient(
+    at top,
+    blue 0 30%,
+    yellow 70% 100% );
+ } */
+/* картинка с прозрачным фоном */
+/* .linear {
+   background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+   ),
+   url(../img/box1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+ } */

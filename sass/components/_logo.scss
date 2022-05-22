@@ -1,0 +1,33 @@
+.logo {
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.9;
+    display: flex;
+  }
+  @include tablet {
+  }
+  align-items: center;
+  width: 145px;
+  height: 31px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  color: var(--accent-text-color);
+  text-decoration: none;
+}
+
+.logo {
+  &__black {
+    color: #000000;
+  }
+}
+.logo-mb__list {
+  margin-bottom: 60px;
+}
+
+.logo-mb {
+  &__span-wite {
+    color: #ffffff;
+  }
+}

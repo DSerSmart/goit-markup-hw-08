@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--durk-background-color);
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.div-2 {
+  @media screen and (max-width: 1199px) {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+  }
+  @include desktop {
+    display: flex;
+  }
+}
+.div-tab-list {
+  @include tablet {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  @include desktop {
+    padding-left: 0px;
+  }
+}

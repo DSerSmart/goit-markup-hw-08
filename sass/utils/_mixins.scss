@@ -1,0 +1,23 @@
+@mixin flexCenter($type: flex, $main-axis: center, $cross-axis: center) {
+  display: $type;
+  justify-content: $main-axis;
+  align-items: $cross-axis;
+}
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

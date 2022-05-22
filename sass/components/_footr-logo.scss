@@ -1,0 +1,49 @@
+.logo-mb {
+  margin-bottom: 20px;
+}
+
+.logo-mb {
+  &__adress {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--primeri-wite-color);
+    margin-bottom: 9px;
+  }
+}
+
+.footer-mb {
+  margin-bottom: 30px;
+}
+
+.logo-mb {
+  &__contact {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.logo-mb {
+  &__contact1 {
+    margin-bottom: 9px;
+  }
+}
+.logo-mb {
+  &__uk {
+    color: var(--uk);
+  }
+}
+
+.logo-mb {
+  &__in {
+    color: var(--in);
+    margin-left: -3px;
+  }
+}
