@@ -1,9 +1,10 @@
 .header {
   padding: 10px 0;
+  border-bottom: 1px solid var(--border-bottom);
   @include desktop {
     display: flex;
     height: 82px;
-    border-bottom: 1px solid var(--border-bottom);
+   
   }
   .container {
     @include desktop {
