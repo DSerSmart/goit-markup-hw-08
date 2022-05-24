@@ -356,19 +356,22 @@ img {
   display: block;
 }
 
-.contact__item:not(:last-child) {
-  padding-right: 30px;
-}
-
 @media (max-width: 767px) {
   .contact__item:not(:last-child) {
     display: none;
   }
 }
 
-.contact__item {
+.contact__item:not(:first-child) {
   margin-top: 15px;
   flex-shrink: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    flex-shrink: 0;
+    padding-right: 30px;
+  }
 }
 
 .contact__icon:hover .contact__contact,
@@ -789,7 +792,7 @@ fill:var(--primeri-wite-color);
 }
 
 .a-soc-link {
-  max-width: 210px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;

@@ -10,11 +10,14 @@
     @media (max-width: 767px) {
       display: none;
     }
-    padding-right: 30px;
   }
-  &__item {
+  &__item:not(:first-child)  {
     margin-top: 15px;
     flex-shrink: 0;
+  }
+  @include desktop {
+    flex-shrink: 0;
+    padding-right: 30px;
   }
 }
 
