@@ -348,6 +348,12 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .navigator__link::after {
+    bottom: -33px;
+  }
+}
+
 .navigator__link--current {
   color: var(--accent-text-color);
 }

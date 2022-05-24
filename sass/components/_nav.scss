@@ -55,6 +55,9 @@
       position: absolute;
       left: 0;
       bottom: -26px;
+      @media screen and(min-width: 1200px){
+        bottom: -33px;
+      }
       width: 100%;
       height: 4px;
       background-color: #2196f3;
