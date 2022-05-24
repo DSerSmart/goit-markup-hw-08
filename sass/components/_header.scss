@@ -1,9 +1,11 @@
-.header {
+.header { 
+  overflow: hidden;
   padding: 10px 0;
   border-bottom: 1px solid var(--border-bottom);
   @include desktop {
     display: flex;
     height: 82px;
+   
    
   }
   .container {
@@ -120,5 +122,8 @@
   color: var(--primeri-text-color);
 }
 .no-scroll {
+  overflow: hidden;
+}
+.body.modal-open {
   overflow: hidden;
 }
