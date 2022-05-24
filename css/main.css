@@ -356,8 +356,12 @@ img {
   display: block;
 }
 
+.contact__item {
+  padding-right: 30px;
+}
+
 @media (max-width: 767px) {
-  .contact__item:not(:last-child) {
+  .contact__item {
     display: none;
   }
 }
@@ -368,9 +372,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .contact {
-    flex-shrink: 0;
-    padding-right: 30px;
+  .contact__item:not(:first-child) {
+    margin-top: 0;
+    margin-left: 30px;
   }
 }
 
@@ -388,10 +392,9 @@ img {
 }
 
 .contact__contact {
-  padding-right: 15px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--primeri-text-color);
   display: flex;
   align-items: center;
@@ -403,9 +406,16 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact__contact {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .contact__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .hero {
