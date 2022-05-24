@@ -22,6 +22,7 @@
 .header-conect {
   @include tablet {
     padding-left: 84px;
+    // padding-top: 11px ;
   }
 
   @include desktop {
